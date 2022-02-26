@@ -15,7 +15,7 @@
   },
   "scripts": {
     "build:clean": "rimraf ./dist",
-    "build:web": "npm run build:clean && node theme_generator.js --target=targets/web.json",
+    "build:web": "npm run build:clean && node theme_generator.js --target=targets/web.json --fileFormat=json --componentGroups=true",
     "build:windows": "npm run build:clean && node theme_generator.js --target=targets/qt.json && node theme_generator.js --target=targets/windows-high-contrast.json",
     "build:linux": "npm run build:clean && node theme_generator.js --target=targets/qt.json",
     "build:macos": "npm run build:clean && node theme_generator.js --target=targets/macos.json",
